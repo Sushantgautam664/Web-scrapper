@@ -1,0 +1,21 @@
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f5f5f5;
+}
+body.dark-mode nav {
+    background: #333;
+}
+.toggle-btn {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #222;
+    color: #fff;
+}
