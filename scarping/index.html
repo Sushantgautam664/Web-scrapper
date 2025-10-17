@@ -206,7 +206,7 @@
                 scrapeStatus.className = 'scrape-status info';
                 if (scrapeBtn) { scrapeBtn.disabled = true; scrapeBtn.dataset.originalText = scrapeBtn.textContent; scrapeBtn.textContent = 'Scraping…'; }
                 try {
-                    const res = await fetch('https://your-webscraper.onrender.com/scrape', {
+                    const res = await fetch('https://web-scrapper-jnca.onrender.com/', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ url: target })
@@ -387,4 +387,5 @@
 </body>
 
 </html>
+
 
