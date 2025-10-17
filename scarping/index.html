@@ -165,7 +165,7 @@
         </div>
     </footer>
     <script>
-        const res = await fetch('https://your-webscraper.onrender.com/scrape', {
+        
 
         // Dark/Light mode toggle
         const btn = document.getElementById('toggleMode');
@@ -206,7 +206,7 @@
                 scrapeStatus.className = 'scrape-status info';
                 if (scrapeBtn) { scrapeBtn.disabled = true; scrapeBtn.dataset.originalText = scrapeBtn.textContent; scrapeBtn.textContent = 'Scraping…'; }
                 try {
-                    const res = await fetch('/scrape', {
+                    const res = await fetch('https://your-webscraper.onrender.com/scrape', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ url: target })
@@ -387,3 +387,4 @@
 </body>
 
 </html>
+
